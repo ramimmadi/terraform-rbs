@@ -16,7 +16,7 @@ resource "google_compute_instance" "rbs-devinstance" {
       // Ephemeral IP
     }
   }
-metadata_startup_script = "sudo rm -rf /var/lib/tomcat8/webapps/petclinic.war;sudo wget https://storage.googleapis.com/project-test-to-kubernetes-manifests/petclinic.war  /var/lib/tomcat8/webapps/;sudo systemctl restart tomcat8"
+metadata_startup_script = "sudo rm -rf /var/lib/tomcat8/webapps/petclinic.war && sudo wget https://storage.googleapis.com/project-test-to-kubernetes-manifests/petclinic.war  /var/lib/tomcat8/webapps/ && sudo systemctl restart tomcat8"
 }
 
 
