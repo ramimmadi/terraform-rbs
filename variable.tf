@@ -13,6 +13,6 @@ variable "instance_zone" {
 }
 
 variable "instance_image" {
-  default = "projects/project-test-to/global/snapshots/snapshot-1"
+  default = "projects/project-test-to/global/images/tomcat-image"
 }
 
