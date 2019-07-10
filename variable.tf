@@ -13,6 +13,6 @@ variable "instance_zone" {
 }
 
 variable "instance_image" {
-  default = "debian-cloud/debian-9"
+  default = "projects/project-test-to/global/snapshots/snapshot-1"
 }
 
